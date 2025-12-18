@@ -1,2 +1,85 @@
-[index.html](https://github.com/user-attachments/files/24240994/index.html.html)
-<img width="2000" height="1414" alt="logo-novatech" src="https://github.com/user-attachments/assets/743b76d9-5551-4d87-93fd-ca1c65a461e8" />[mkdir docs.txt](https://github.com/user-attachments/files/24240995/mkdir.docs.txt)
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <title> NOVATECH </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de teste">
+    <meta name="author" content="Rafael Goncalves">
+    
+    <style>
+    /* Reset básico */
+    body, h1, ul {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #0f172a; 
+    }
+
+    .header-tech {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+        background-color: #0f172a; 
+        color: #f8fafc;
+        border-bottom: 2px solid #38bdf8;
+        /* Se quiser que o menu acompanhe a rolagem, mantenha a linha abaixo: */
+        position: sticky; 
+        top: 0;
+    }
+
+    .header-tech h1 {
+        font-size: 1.8rem;
+        color: #38bdf8;
+    }
+
+    .header-tech ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .header-tech a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Estilo para a imagem rolável */
+    .container-imagem-longa {
+        width: 100%;
+        display: block;
+    }
+
+    .imagem-grande {
+        width: 100%;      /* Ocupa toda a largura da tela */
+        height: auto;     /* A altura se ajusta sozinha ao tamanho real da imagem */
+        display: block;   /* Remove espaços em branco abaixo da imagem */
+    }
+    </style>
+</head>
+
+<body>
+    <header class="header-tech">
+        <div class="logo">
+            <h1>Novatech Informática</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-imagem-longa">
+        <img src="logo-novatech.png" alt="Banner Novatech" class="imagem-grande">
+    </main>
+
+</body>
+</html>
